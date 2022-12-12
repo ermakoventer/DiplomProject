@@ -1,0 +1,90 @@
+a{
+    text-decoration: none;
+    color:white;
+}
+li{
+    list-style: none;
+}
+
+body{
+    font-size: 16px;
+    background-color: #3d3a3a;
+    color: white;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex-block{
+    display: flex;
+    justify-content: space-between;
+}
+.aside{
+    /* background-color: violet; */
+    margin-top: 10px;
+    width: 15%;
+    /* height: 97vh; */
+    border-style:solid;
+    border-color: rgb(126, 121, 121);
+    border-width: 0px 1px 0px 0px;
+
+    
+}
+.block_article{
+    width: 80%;
+    /* background-color: cornflowerblue; */
+    max-height: 97vh;
+}
+.img_article{
+    width: 100%;
+    /* background-color: darkolivegreen; */
+    height: 25vh;
+    padding-top: 20px;
+}
+.img_container{
+    width: 50%;
+    height: 87%;
+    /* этот цвет показывает ширину блока ИМАДЖ */
+    /* background-color: greenyellow; */
+    /* этот цвет показывает ширину блока ИМАДЖ */
+    margin: 0 auto; 
+    
+}
+.article_image-insert{
+    height: 100%;
+    /* этот блок центрирует изображение по центру в блоке статья  */
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.article{
+    height: 72vh;
+    margin-left: 10px;
+    /* overflow-y: hidden; */
+    /* max-width: 1000px; */
+}
+.text{
+    font-style:italic; 
+    font-size: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.article_contect-text{
+    text-indent:30px;
+    text-align:justify;
+}
+.list_block>ul>li{
+    font-style: italic;
+    margin-top: 7px;
+}
+.item-container_video>video{
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    
+}

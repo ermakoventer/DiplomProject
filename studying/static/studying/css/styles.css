@@ -1,0 +1,355 @@
+/* font-family: 'Press Start 2P', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #3d3a3a;
+    color: white;
+    
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper{
+    max-width:1200px;
+    margin: 0 auto;
+}
+.main_page{
+    background-image: url('../images/shapko.png');
+    background-size: cover;
+    /* width: 100vh; */
+    /* background-size: 100%; */
+    height: 100vh;
+}
+.logotipe{
+    /* border-width: 2px; */
+    /* border-color: rgb(204, 75, 75) rgb(231, 231, 74) rgb(83, 83, 182) rgb(147, 92, 199); */
+    /* border-style: dotted; */
+    padding: 5px 5px ;
+}
+/* Тут будет верстка pop-up блока меню------------------------- */
+.pop_up{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    left:0;
+    top:0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index:2;
+    display:none;
+    color: black;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.pop_up_body_list{
+    margin-top: 30px;
+}
+.pop_up_container{
+    display: flex;
+    width:100%;
+    height: 100%;
+}
+.pop_up_body{
+    margin:auto;
+    height: 500px;
+    width:500px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding:100px, 15px, 100px, 15px;
+    position: relative; 
+}
+.pop_up_body_link{
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(34, 38, 45);
+}
+.pop_up_body_link:hover{
+    color: #757573;
+}
+.pop_up_body>ul>li:hover{
+    color: rgb(78, 80, 83);
+}
+.pop_up_body>ul{
+    margin-top:100px;
+}
+.active{
+    display:block;
+}
+.pop_up_close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor: pointer;
+    color: white;
+    background-color: #3d3a3a;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+/* Тут будет заканчиваться верстка pop-up блока меню------------------------- */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logotipe{
+    margin-top: 15px;
+    
+}
+.header_list{
+    margin-top: 20px;
+}
+.header_list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.list{
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+}
+
+.list:hover{
+    color: #5052e4;
+}
+
+.main_title{
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin-top: 40vh;
+    /* text-shadow: red 2px 5px; */
+}
+.arrow{
+    text-align: center;
+}
+.arrow_down{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.arrow_down:hover{
+    font-size: 50px;
+    color:#5052e4;
+
+}
+.title{
+    margin-top: 30px;
+    font-size: 42px;
+    text-align: center;
+}
+.videos{
+    margin-top: 110px;
+}
+.picture1{
+    width: 1000px;
+}
+.description{
+    font-size: 18px;
+    text-indent: 10px;
+    padding: 5px;
+}
+.info_container{
+    margin: 0 auto;
+    max-width: 55%;
+    border-width: 1px 0px 1px 0px;
+    border-color: rgb(126, 121, 121) rgb(83, 83, 182) rgb(126, 121, 121) rgb(83, 83, 182); 
+    border-style: solid;
+    /* background-image: url(../images/frame.jpeg);
+    background-size: cover; */
+
+}
+.elem{
+    font-size: 100px;
+    font-style: italic;
+}
+/* ПОДПИСЬ */
+.sign{
+    font-family: 'Comforter', cursive;
+    font-size: 26px;
+    text-align: right;
+}
+
+.about_us{
+    margin-top: 10px;
+    height: 110vh;
+}
+.articles{
+    height: 100vh;
+}
+
+.articles_flex{
+    margin: 0 auto;
+    max-width: 100%;
+    border-width: 1px 0px 1px 0px;
+    border-color: rgb(126, 121, 121) rgb(83, 83, 182) rgb(126, 121, 121) rgb(83, 83, 182); 
+    border-style: solid;
+}
+/* Стилизуем раздел статьи --------------------------------------------------------- */
+
+.flex_item1{
+    width: 31%;
+}
+.flex_item1_img{
+    border-radius:10% 10% 0 0;
+    border-width: 1px;
+    /* border-style: solid; */
+    height: 350px;
+    width: 98%;
+    background-size: 300px 300px;
+    background-position: center;
+    background-image: url('../images/agressivesk_about.jpg');
+    background-repeat: no-repeat;
+}
+.flex_item2_img{
+    border-radius:10% 10% 0 0;
+    border-width: 1px;
+    /* border-style: solid; */
+    height: 350px;
+    width: 98%;
+    background-size: 300px 300px;
+    background-position: center;
+    background-image: url('../images/frame.jpg') ;
+    background-repeat: no-repeat;
+}
+.flex_item3_img{
+    border-radius:10% 10% 0 0;
+    border-width: 1px;
+    /* border-style: solid; */
+    height: 350px;
+    width: 98%;
+    background-size: 300px 300px;
+    background-position: center;
+    background-image: url('../images/powerskates_about.jpg') ;
+    background-repeat: no-repeat;
+}
+
+.short_description{
+    height: 100px;
+    border-radius: 0 0 10% 10% ;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.articles_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex_item1-title>h4{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.short_description{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+.flex-video_main{
+    display: flex;
+    justify-content: space-between;
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgb(126, 121, 121) rgb(83, 83, 182) rgb(126, 121, 121) rgb(83, 83, 182); 
+    padding-bottom: 20px;
+}
+/* фиксированная высота для тега h */
+.flex-video{
+    width:30%;
+}
+.flex-video>h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+.item-container_video{
+    /* border-width: 1px;
+    border-color:green;
+    border-style: solid; */
+    height: 210px;
+    width: 100%; 
+}
+.articles-phone{
+    margin-top: 0px;
+    height: 100vh;
+    /* margin-top:100px;
+    background-image: url(../images/cap.png) ;
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 15px; */
+    
+}
+.video-main-phone{
+    margin-top: 80px;
+    height: 100vh;
+    /* margin-top:100px;
+    background-image: url(../images/фон.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15px; */
+}
+.item-container_video_video{
+    width: 100%;
+    height: 100%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    margin: 0 auto;
+}
+.form>p{
+    margin-top: 15px;
+}
+.form>input{
+    font-family: 'Times New Roman', Times, serif;
+    height: 20px;
+}
+.input:focus{
+    outline: rgb(136, 136, 221);
+}
+
+.footer{
+    border-width:0px 0px 0px 0px;
+    /* border-color:rgb(128, 17, 17); */
+    border-style: solid;
+    width: 100%;
+    margin-top: 40px;
+    background-color: #757573;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    /* border-width:1px;
+    border-color:rgb(128, 17, 17);
+    border-style: solid; */
+}
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+/* .footer-list>ul>li{
+    margin-left: 40px;
+} */
+.item1{
+    margin-left: 25px;
+}

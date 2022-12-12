@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'studying/css/normilize.css' %}">
+    <link rel="stylesheet" href="styles/normilize.css">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="{% static 'studying/css/styles.css' %}">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Press+Start+2P&family=Roboto+Slab:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Inconsolata:wght@300&family=Press+Start+2P&family=Roboto+Slab:wght@200;300&display=swap" rel="stylesheet">
+    <style>
+        .material-symbols-outlined {
+            margin-left: 15px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            margin-top: -3px;
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 700,
+            'GRAD' 0,
+            'opsz' 48
+            
+            }
+            .material-symbols-outlined:hover{
+                color: #5052e4;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="main_page">
+        <div class="wrapper">
+            <!-- <div class="menu-pop_up close-menu" id="popUp">
+                <div class="cross_flex-container">
+                    <div class="cross2"></div>
+                    <div class="cross" id="close" onclick=""><img class="cross_img" src="images/cross.png" alt="close_cross"></div>
+                </div>
+                
+                <ul align="center">
+                    
+                </ul>
+                
+            </div> -->
+             
+            
+            <header class="header">
+                <div class="logotipe">
+                    <img src="images/logo.png" alt="" width="80" height="70">
+                    <span style="color:rgb(204, 75, 75); font-style: italic;">|</span>
+                    <span style="color: rgb(231, 231, 74);">|</span>
+                    <span style="color:rgb(83, 83, 182); font-style: italic;">|</span>
+                    <span style="color:rgb(147, 92, 199);">|</span>
+                    <span style="color:rgb(204, 75, 75); font-style: italic;">|</span>
+                </div>
+                <ul class="header_list">
+                    <li class="list"  id="open_pop_up">Меню</li>
+                    <li class="list col2"><a class="col2" href="#">Инструменты ролера</a></li>
+                    <li class="list col3"><a class="col3" href="#">О нас</a></li>
+                    <li class="list col4"><a class="col4" href="#">Видео</a></li>
+                    <li class="list"><a href="#"><span class="material-symbols-outlined">
+                        login</span></a></li>
+                </ul>
+            </header>
+            <!--  pop up menu. I do it now.--------------------------------------------------------------->
+            <div class="pop_up" id="pop_up">
+                <div class="pop_up_container">
+                    <div class="pop_up_body" id="pop_up_body">
+                        <ul>
+                            <li class="pop_up_body_list" ><a class="pop_up_body_link" href="article.html">Статьи</a></li>
+                            <li class="pop_up_body_list"><a class="pop_up_body_link" href="video.html">Видео</a></li>
+                            <li class="pop_up_body_list"><a class="pop_up_body_link" href="index.html">О нас</a></li>
+                            <li class="pop_up_body_list"><a class="pop_up_body_link" href="#">Написать нам</a></li>
+                        </ul>
+                        <div class="pop_up_close" id="pop_up_close">&#10006;</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------------------------------------- -->
+            <h1 class="main_title">Интернет портал клуба любителей роллер спорта</h1>
+            <h1 class="arrow"><a href="#arrow" class="arrow_down">&#9660;</a></h1>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="about_us">
+            <h1 class="title" id="arrow">О нас</h1>
+            <div class="info_container">
+                <p class="description">Вы зашли на интернет портал клуба любителей роллер спорта. На этом сайте вы найдете интересные статьи связынные с роллер спортом.</p>
+                <p class="description">На сайте присутствуют обучающие видео о том как првильно начать кататься на роликах.</p>
+                <p class="description">Разбираются инетересные темы связанные с индустрией роллер спорта и мн. др.</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="articles-phone">
+        <div class="wrapper">
+            <div class="articles">
+                <h1 class="title">Статьи</h1>
+                <div class="articles_flex">
+                    <div class="flex_item1">
+                        <div class="flex_item1-title"><h4>Какие есть виды роликовых каньков?</h4></div>
+                        <div class="flex_item1_img img1"></div>
+                        <div class="short_description">lorem insup choto tam...</div>
+                    </div>
+                    <div class="flex_item1">
+                        <div class="flex_item1-title"><h4>Какие бывают рамы для роликов?</h4></div>
+                        <div class="flex_item2_img"></div>
+                        <div class="short_description">Рама это основа катания. От рамы зависит множество фактров. Такие как устойчивость, скорость, удобство и мн. др.</div>
+                    </div>
+                    <div class="flex_item1">
+                        <div class="flex_item1-title"><h4>Что такое powerskating?</h4></div>
+                        <div class="flex_item3_img"></div>
+                        <div class="short_description">Power skating - это одно из направлений ...</div>
+                    </div>
+                    
+                </div>  
+                <h4><a href="article.php">Читать дальше</a></h4>
+            </div> 
+        </div>
+    </div>
+    
+    <div class="video-main-phone">
+    <div class="wrapper">
+        <div class="videos">
+            <h1 class="title">Видео</h1>
+                <div class="flex-video_main">
+                    <div class="flex-video">
+                        <h4>Front side на скейте</h4>
+                        <div class="item-container_video">
+                            <video controls="controls" poster="images/Конкейв.jpg.crdownload" src="{% static 'studying/video/jump_and_frontside.mp4' %}" class="item-container_video_video"></video>
+                        </div>
+                    </div>
+                    <div class="flex-video">
+                        <h4>На роликах спиной вперед?</h4>
+                        <div class="item-container_video">
+                            <video controls="controls" poster="images/Конкейв.jpg.crdownload" src="{% static 'studying/video/jump_and_frontside.mp4' %}" class="item-container_video_video"></video>
+                        </div>
+                    </div>
+                    <div class="flex-video">
+                        <h4>Как тормозить на роликах?</h4>
+                        <div class="item-container_video">
+                            <video controls="controls" poster="images/Конкейв.jpg.crdownload" src="{% static 'studying/video/jump_and_frontside.mp4' %}" class="item-container_video_video"></video>
+                        </div>
+                    </div>
+                </div>
+            <h4><a href="video.html">смотреть больше и читать описание</a></h4>
+        </div> 
+    </div>
+
+    </div>
+    <div class="callback">
+        <div class="wrapper">
+            <h1 align="center">Напишите нам</h1>
+            <form action="" class="form">
+                <p>Ваше имя</p>
+                <p><input type="text" name="" id="" class="input"></p>
+                <p>Ваш email</p>
+                <p><input type="text" class="input"></p>
+                <p>Напишите сообщение</p>
+                <p><textarea rows="10" cols="45" name="text" class="input"></textarea></p>
+                <p><input type="submit"></p>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-flex">
+                <div class="logotipe">
+                    <img src="images/logo.png" alt="" width="80" height="70">
+                    <!-- <span style="color:rgb(204, 75, 75); font-style: italic;">|</span>
+                    <span style="color: rgb(231, 231, 74);">|</span>
+                    <span style="color:rgb(83, 83, 182); font-style: italic;">|</span>
+                    <span style="color:rgb(147, 92, 199);">|</span>
+                    <span style="color:rgb(204, 75, 75); font-style: italic;">|</span> -->
+                </div>
+                <ul class="footer-list">
+                    <li class="footer-list item1"><a href="https://vk.com/nick_kola_fishman"><img src="images/vk.png" alt="" width="40" height="40"></a></li>
+                    <li class="footer-list item1"><a href="#"><img src="images/mail.ru.png" alt="" width="40" height="40"></a></li>
+                    <!-- <li><a href="#"></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'studying/scripts/events.js' %}" type="text/javascript"></script>
+    {% static 'studying/scripts/events.js' %}
+</body>
+</html>
